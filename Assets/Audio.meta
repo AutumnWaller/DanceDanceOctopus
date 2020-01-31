@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Animations.meta
 guid: 21d65850b8c47452cbbeae2b86e1aa57
+=======
+guid: 691477910cf993c439dcac3c62eb922f
+>>>>>>> BeatDetection:Assets/Audio.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
