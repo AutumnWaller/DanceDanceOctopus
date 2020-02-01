@@ -31,7 +31,7 @@ public class InputManager : MonoBehaviour
         inputs.t5 = Input.GetButton("T5");
         inputs.t6 = Input.GetButton("T6");
 
-        Debug.Log($"T1: {inputs.t1} T2: {inputs.t2} T3: {inputs.t3} T4: {inputs.t4} T5: {inputs.t5} T6: {inputs.t6}");
+        //Debug.Log($"T1: {inputs.t1} T2: {inputs.t2} T3: {inputs.t3} T4: {inputs.t4} T5: {inputs.t5} T6: {inputs.t6}");
     }
 
 }
