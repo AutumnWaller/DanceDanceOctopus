@@ -11,7 +11,7 @@ public class GameState : MonoBehaviour
         Dead
     }
 
-    public static State gameState = State.Playing;
+    public static State gameState = State.Menu;
 
 
 
