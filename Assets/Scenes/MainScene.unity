@@ -229,6 +229,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   water: {fileID: 1873382653986240, guid: 1c7cf66935bb9bd4785bae34e481b564, type: 3}
   check: 0
+--- !u!1 &333843275 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1764017957002336849, guid: de3d96536e516e64ea88c98385922283,
+    type: 3}
+  m_PrefabInstance: {fileID: 7148975549519914537}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &333843276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333843275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045ceecc27ea59d47befbd63e0c34c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  water: {fileID: 1873382653986240, guid: 1c7cf66935bb9bd4785bae34e481b564, type: 3}
+  check: 1
 --- !u!1 &350649848
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,6 +1583,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   water: {fileID: 1873382653986240, guid: 1c7cf66935bb9bd4785bae34e481b564, type: 3}
   check: 0
+--- !u!1 &1882387043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5936995068982380028, guid: de3d96536e516e64ea88c98385922283,
+    type: 3}
+  m_PrefabInstance: {fileID: 7148975549519914537}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1882387044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882387043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045ceecc27ea59d47befbd63e0c34c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  water: {fileID: 1873382653986240, guid: 1c7cf66935bb9bd4785bae34e481b564, type: 3}
+  check: 1
 --- !u!1 &2039090687 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5024056818193339801, guid: d959e8dac098dff48a1524a7150a4ac2,
@@ -2055,3 +2095,17 @@ MonoBehaviour:
   - {fileID: 62797382}
   rand: 0
   water: {fileID: 0}
+--- !u!114 &7148975549519914540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7148975549519914538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045ceecc27ea59d47befbd63e0c34c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  water: {fileID: 1873382653986240, guid: 1c7cf66935bb9bd4785bae34e481b564, type: 3}
+  check: 1

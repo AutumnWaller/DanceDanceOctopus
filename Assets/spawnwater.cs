@@ -20,9 +20,8 @@ public class spawnwater : MonoBehaviour
     {
         if (check)
         {
-            if (this.gameObject.activeInHierarchy == true)
+            if (gameObject.activeInHierarchy == true)
             {
-                print("yes");
                 Instantiate(water, this.transform.position + new Vector3(0,-1,0), Quaternion.identity);
                 check = false;
             }
