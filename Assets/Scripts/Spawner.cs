@@ -38,13 +38,20 @@ public class Spawner : MonoBehaviour
     private void Awake()
     {
         currentPostion = transform.position;
+
         // Make a pool of how many objects you want
         PoolManager.CreatePool(currentObj, 30, ref listOfObj);
+        sleepy();
     }
 
     private bool ShouldSpawn()
     {
         return Time.time >= nextSpawnTime;
+    }
+
+    IEnumerator sleepy()
+    {
+        yield return new WaitForSeconds(4);
     }
 
     private void Spawn()

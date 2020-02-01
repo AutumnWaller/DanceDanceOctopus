@@ -89,7 +89,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7157391652709961730}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -108,12 +108,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   waterLevel: 0
-  floatHeight: 2
-  bounceDamp: 0.41
+  floatHeight: 0.05
+  bounceDamp: 0.71
   BuoyancyCenterOffset: {x: 1, y: 0, z: 0}
-  forceFactor: 0
-  actionPoint: {x: 0, y: 0, z: 0}
-  upLift: {x: 0, y: 0, z: 0}
+  forceFactor: 1
 --- !u!54 &5557897812019088842
 Rigidbody:
   m_ObjectHideFlags: 0
