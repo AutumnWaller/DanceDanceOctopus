@@ -16,8 +16,10 @@ public class collisionboat : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        
         if(other.tag == "Plank"||other.tag=="Shark")
         {
+            Bars.ChangeHealth(-5);
         rand = Random.Range(0, 2);
         if (rand == 1)
         {

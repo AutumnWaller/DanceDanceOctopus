@@ -15,7 +15,7 @@ public class Bars : MonoBehaviour
     }
 
     public static void ChangeHealth(int amount){
-        fuel += amount;
+        health += amount;
     }
     public static void GetFuelCan(){
         ChangeFuel(10);
@@ -33,6 +33,13 @@ public class Bars : MonoBehaviour
         ChangeFuel(-(Time.deltaTime * 0.75f));
         healthSlider.value = health / 100;
         fuelSlider.value = fuel / 100;
+        if(health <= 0 || fuel <= 0){
+            if(health <= 0)
+                GameState.gameState = GameState.State.OutOfFuel;
+            if(fuel <= 0)
+                GameState.gameState = GameState.State.Dead;
+            Scoring.isScoreIncreasing = false;
+        }
     }
 
 
