@@ -30,7 +30,6 @@ public class shark : MonoBehaviour
             }
         }
 
-        print(hit);
         rb.velocity = transform.forward * 50;
         if (hit)
         {

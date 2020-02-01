@@ -5,11 +5,12 @@ using UnityEngine;
 public class spawnwater : MonoBehaviour
 {
     public GameObject water;
-    public bool check;
+    public bool check = true;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        check = true;
     }
 
     // Update is called once per frame
@@ -19,6 +20,7 @@ public class spawnwater : MonoBehaviour
         {
             if (this.gameObject.activeInHierarchy == false)
             {
+                print("yes");
                 Instantiate(water, water.transform.position, Quaternion.identity);
                 check = false;
             }
