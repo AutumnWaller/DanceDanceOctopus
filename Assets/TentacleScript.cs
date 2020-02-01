@@ -22,8 +22,8 @@ public class TentacleScript : MonoBehaviour
 
     public void DisableDebris()
     {
-        water.check = true;
         rand = Random.Range(0, 9);
+        holes[rand].SetActive(true);
         OctoScript.DisableDebris(limbNo);
 
     }
