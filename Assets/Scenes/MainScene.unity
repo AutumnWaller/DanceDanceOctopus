@@ -140,6 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   water: {fileID: 1873382653986240, guid: 1c7cf66935bb9bd4785bae34e481b564, type: 3}
   check: 0
+<<<<<<< HEAD
 --- !u!1001 &80946746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -324,6 +325,10 @@ MonoBehaviour:
   LaneNo: 2
 --- !u!65 &277424438
 BoxCollider:
+=======
+--- !u!1001 &135714247
+PrefabInstance:
+>>>>>>> parent of 20fc841... Dunno
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -725,6 +730,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 48.472004, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &439728576
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,6 +873,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   water: {fileID: 1873382653986240, guid: 1c7cf66935bb9bd4785bae34e481b564, type: 3}
   check: 1
+=======
+>>>>>>> parent of 20fc841... Dunno
 --- !u!1 &548331785 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5024056818526270034, guid: d959e8dac098dff48a1524a7150a4ac2,
