@@ -9,13 +9,19 @@ public class InputManager : MonoBehaviour
     public struct Inputs{
         public bool t1, t2, t3, t4, t5, t6;
     }
-    Inputs inputs;
+    public Inputs inputs;
+
+    public Inputs GetInputs(){
+        return inputs;
+    }
 
     /// <summary>
     /// Awake is called when the script instance is being loaded.
     /// </summary>
     void Awake()
     {
+        if(getRef == null)
+            getRef = this;
         inputs = new Inputs();
     }
 
