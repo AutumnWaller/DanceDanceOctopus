@@ -30,6 +30,9 @@ public class Translator : MonoBehaviour
 
     Rigidbody rigidbody;
 
+    void Start() {
+        rigidbody = GetComponent<Rigidbody>();
+    }
     private void Update()
     {
         actionPoint = transform.position + transform.TransformDirection(BuoyancyCenterOffset);
