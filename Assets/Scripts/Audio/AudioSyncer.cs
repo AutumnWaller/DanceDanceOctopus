@@ -18,7 +18,7 @@ public class AudioSyncer : MonoBehaviour
     {
         m_Beat = true;
         m_Timer = m_CountDownTime;
-        Debug.Log("Beat");
+       // Debug.Log("Beat");
     }
 
 
@@ -28,7 +28,7 @@ public class AudioSyncer : MonoBehaviour
         m_PreviousValue = m_AudioValue;
 		m_AudioValue = SpectrumGenerator.m_SpectrumData[m_SpectrumPoint];
 
-        Debug.Log(m_AudioValue);
+       // Debug.Log(m_AudioValue);
         if (m_PreviousValue > m_Threshold && m_AudioValue <= m_Threshold && m_Timer <= 0)
 		{
             TriggerBeat();
