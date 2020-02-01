@@ -6,8 +6,10 @@ public class TentacleScript : MonoBehaviour
     Ocotpus_Script OctoScript;
     public GameObject[] holes;
     public int rand;
+    public spawnwater water; 
     private void Start()
     {
+        water = GetComponent<spawnwater>();
         OctoScript = FindObjectOfType<Ocotpus_Script>();
     }
 
@@ -20,9 +22,10 @@ public class TentacleScript : MonoBehaviour
 
     public void DisableDebris()
     {
+        water.check = true;
         rand = Random.Range(0, 10);
         holes[rand].SetActive(false);
-
+       
         OctoScript.DisableDebris(limbNo);
 
     }
