@@ -34,9 +34,7 @@ public class shark : MonoBehaviour
         rb.velocity = transform.forward * 50;
         if (hit)
         {
-            rb.velocity += transform.right * -15;
             rb.velocity += transform.up * -50;
-            rb.velocity += transform.forward * 15;
             StartCoroutine(coroutine());
 
         }
