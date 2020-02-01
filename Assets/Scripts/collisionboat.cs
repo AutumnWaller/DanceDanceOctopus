@@ -12,6 +12,7 @@ public class collisionboat : MonoBehaviour
     void Start()
     {
         decals2.SetActive(false);
+        decals.SetActive(false);
     }
 
     // Update is called once per frame
