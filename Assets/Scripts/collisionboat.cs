@@ -4,33 +4,36 @@ using UnityEngine;
 
 public class collisionboat : MonoBehaviour
 {
-    public GameObject shark;
     public GameObject decals;
     public GameObject decals2;
     int rand;
     // Start is called before the first frame update
     void Start()
     {
-        decals2.SetActive(false);
-        decals.SetActive(false);
+        if(decals2!=null)decals2.SetActive(false);
+        if(decals!=null)decals.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter(Collider other)
     {
-        
-    }
-    void OnCollisionEnter(Collision other)
-    {
-        print(other);
+        if(other.tag == "Plank"||other.tag=="Shark")
+        {
         rand = Random.Range(0, 2);
         if (rand == 1)
         {
-            decals.SetActive(true);
+            if(decals!=null)decals.SetActive(true);
         }
         else
         {
-            decals2.SetActive(true);
+            if(decals2!=null)decals2.SetActive(true);
+        }
+        if(other.tag=="Plank")
+            {
+            other.gameObject.SetActive(false);
+            } else if(other.tag == "Shark")
+            {
+                other.gameObject.tag = "Untagged";
+            }
         }
     }
 }

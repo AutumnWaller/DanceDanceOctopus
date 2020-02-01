@@ -5,11 +5,11 @@ public class TentacleScript : MonoBehaviour
     [SerializeField] int limbNo =0;
     Ocotpus_Script OctoScript;
     public GameObject[] holes;
-    public int rand;
-    public spawnwater water; 
+    //public int rand;
+    //public spawnwater water; 
     private void Start()
     {
-        water = GetComponent<spawnwater>();
+        //water = GetComponent<spawnwater>();
         OctoScript = FindObjectOfType<Ocotpus_Script>();
     }
 
@@ -22,8 +22,19 @@ public class TentacleScript : MonoBehaviour
 
     public void DisableDebris()
     {
-        rand = Random.Range(0, 9);
-        holes[rand].SetActive(true);
+        if(holes.Length>0){
+        if(holes[0].activeSelf)
+        {
+            holes[0].SetActive(false);
+        } else if(holes[1].activeSelf)
+        {
+            holes[1].SetActive(false);
+        }
+        }
+
+
+        //rand = Random.Range(0, 9);
+        //holes[rand].SetActive(true);
         OctoScript.DisableDebris(limbNo);
 
     }

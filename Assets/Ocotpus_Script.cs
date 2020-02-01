@@ -28,7 +28,7 @@ public class Ocotpus_Script : MonoBehaviour
         limbs[1] = limbsGO[1].GetComponent<Animator>();
         limbs[2] = limbsGO[2].GetComponent<Animator>();
         limbs[3] = limbsGO[3].GetComponent<Animator>();
-                limbs[4] = limbsGO[4].GetComponent<Animator>();
+        limbs[4] = limbsGO[4].GetComponent<Animator>();
         limbs[5] = limbsGO[5].GetComponent<Animator>();
 
     }
@@ -99,6 +99,7 @@ public class Ocotpus_Script : MonoBehaviour
 
     public void FixTransformDebris(int debrisNo)
     {
+        debris[debrisNo].tag = "Untagged";
         debris[debrisNo].transform.parent = limbsTip[debrisNo].transform;
         debris[debrisNo].transform.position = limbsTip[debrisNo].transform.position;
     }
