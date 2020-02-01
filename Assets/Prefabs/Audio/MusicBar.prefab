@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5963194785967898548}
   - component: {fileID: 5963194785967898550}
   m_Layer: 5
-  m_Name: MusicBar 1
+  m_Name: MusicBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90,6 +90,6 @@ MonoBehaviour:
   m_CountDownTime: 0.15
   m_SpectrumPoint: 0
   m_restScale: {x: 1, y: 1, z: 1}
-  m_beatScale: {x: 1, y: 3, z: 1}
+  m_beatScale: {x: 1, y: 5, z: 1}
   m_restTimer: 25
   m_beatTimer: 0.1

@@ -7,7 +7,6 @@ public class SpectrumGenerator : MonoBehaviour
     [SerializeField] private int m_SpectrumSize = 64;
     [SerializeField] private int m_VisibleSpectrum = 32;
 
-
     private static float[] m_Spectrum;
 
     public static float[] m_SpectrumData;
@@ -25,7 +24,6 @@ public class SpectrumGenerator : MonoBehaviour
         {
             m_SpectrumData[i] = m_Spectrum[i] * 100;
         }
-      //  Debug.Log(m_SpectrumData[0]);
     }
 }
 

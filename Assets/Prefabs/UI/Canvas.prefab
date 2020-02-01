@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 221.18, y: -81.21503}
+  m_AnchoredPosition: {x: 221.18018, y: -81.21503}
   m_SizeDelta: {x: 284.99, y: 54.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &10913304
@@ -145,7 +145,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.00001}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 39.109985, y: -369.9999}
+  m_AnchoredPosition: {x: 39.109863, y: -369.9999}
   m_SizeDelta: {x: 311.27, y: 38.91}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &395875605
@@ -232,7 +232,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 39.339966, y: -214.23}
+  m_AnchoredPosition: {x: 39.339844, y: -214.22998}
   m_SizeDelta: {x: 67.53003, y: 320.95996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &434511470
@@ -469,7 +469,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.00001}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.4000244, y: -370}
+  m_AnchoredPosition: {x: 0.39990234, y: -370}
   m_SizeDelta: {x: 311.27, y: 38.91}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1038647563
@@ -969,7 +969,33 @@ MonoBehaviour:
   m_SongSelection: 0
   m_Songs:
   - {fileID: 501803078}
+  - {fileID: 1064705933}
+  m_Spawners:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_Ocean: {fileID: 0}
+  m_OceanClamp: 0
 --- !u!114 &501803078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7444463676646841615}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72e57eb9bd0b43d4f91f0fd65235e152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BeatInterval: 1
+  m_Clip: {fileID: 8300000, guid: 2a5ce6a7bc87d7444aa6cc262cf1b6a6, type: 3}
+  m_SongName: 
+  m_SongLength: 
+--- !u!114 &1064705933
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

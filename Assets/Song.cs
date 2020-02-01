@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Song : MonoBehaviour
 {
-    public int m_BeatInterval;
+    public float m_BeatInterval;
     [SerializeField] public AudioClip m_Clip;
 
     public string m_SongName;
