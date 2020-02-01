@@ -123,6 +123,7 @@ NavMeshSettings:
 --- !u!1001 &46529419
 PrefabInstance:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
@@ -327,6 +328,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab5a3b4ac83b78546a91c0490fc15704, type: 3}
+=======
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312955875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045ceecc27ea59d47befbd63e0c34c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  water: {fileID: 1873382653986240, guid: 1c7cf66935bb9bd4785bae34e481b564, type: 3}
+  check: 0
+>>>>>>> parent of fe3f424... new
 --- !u!1001 &354583486
 PrefabInstance:
   m_ObjectHideFlags: 0
