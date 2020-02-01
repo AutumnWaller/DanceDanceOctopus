@@ -14,26 +14,13 @@ public class Spawner : MonoBehaviour
     // Will set each generated object to the initial starting postion of the Spawner object
     Vector3 currentPostion;
 
-    // This will be matched up with Time.time
-    private float nextSpawnTime;
+
 
     // The wood to be spawned
     [SerializeField]
     private GameObject currentObj;
 
-    // How long you wanna delay each object being spawned
-    [SerializeField]
-    private float spawnDelay = 10f;
-
-    // Update is called once per frame
-    private void Update()
-    {
-        // pretty self explanatory
-        if(ShouldSpawn())
-        {
-            Spawn();
-        }
-    }
+ 
 
     private void Awake()
     {
@@ -41,22 +28,10 @@ public class Spawner : MonoBehaviour
 
         // Make a pool of how many objects you want
         PoolManager.CreatePool(currentObj, 30, ref listOfObj);
-        sleepy();
     }
 
-    private bool ShouldSpawn()
+    public void Spawn()
     {
-        return Time.time >= nextSpawnTime;
-    }
-
-    IEnumerator sleepy()
-    {
-        yield return new WaitForSeconds(4);
-    }
-
-    private void Spawn()
-    {
-        nextSpawnTime = Time.time + spawnDelay;
         GameObject setWoodPostion = PoolManager.GetObjectFromPool(listOfObj);
         setWoodPostion.transform.position = currentPostion;
         setWoodPostion.SetActive(true);
