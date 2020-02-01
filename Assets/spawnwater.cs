@@ -10,6 +10,8 @@ public class spawnwater : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       // water.transform.position = new Vector3(0,0,0);
+
         check = true;
     }
 
@@ -18,10 +20,10 @@ public class spawnwater : MonoBehaviour
     {
         if (check)
         {
-            if (this.gameObject.activeInHierarchy == false)
+            if (this.gameObject.activeInHierarchy == true)
             {
                 print("yes");
-                Instantiate(water, water.transform.position, Quaternion.identity);
+                Instantiate(water, this.transform.position + new Vector3(0,-1,0), Quaternion.identity);
                 check = false;
             }
         }
