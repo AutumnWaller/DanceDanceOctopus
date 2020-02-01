@@ -34,7 +34,10 @@ public class shark : MonoBehaviour
         rb.velocity = transform.forward * 50;
         if (hit)
         {
-            rb.velocity += transform.up * -50;
+            rb.velocity = transform.forward * -1;
+            this.transform.position += new Vector3(0, -1f, 0);
+            this.transform.Rotate(Vector3.right);
+    
             StartCoroutine(coroutine());
 
         }
@@ -43,12 +46,12 @@ public class shark : MonoBehaviour
     {
         
         news = true;
-        for (int i = 0; i > 50; i++)
-        {
-        
-            this.transform.Rotate(transform.rotation.x -1f, transform.rotation.y + 1f, transform.rotation.z);
+        //for (int i = 0; i > 50; i++)
+        //{
+        //    this.transform.position += new Vector3(0, -10, 0);
+        //    this.transform.Rotate(transform.rotation.x -1f, transform.rotation.y + 1f, transform.rotation.z);
           
-        }
+        //}
 
     }
     private IEnumerator coroutine()
