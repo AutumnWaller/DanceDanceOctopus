@@ -11,7 +11,7 @@ public class collisionboat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        decals2.SetActive(false);
     }
 
     // Update is called once per frame
@@ -19,8 +19,9 @@ public class collisionboat : MonoBehaviour
     {
         
     }
-    void OncollisionEnter(Collision2D other)
+    void OnCollisionEnter(Collision other)
     {
+        print(other);
         rand = Random.Range(0, 2);
         if (rand == 1)
         {

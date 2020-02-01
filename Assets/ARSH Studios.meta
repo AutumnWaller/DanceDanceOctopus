@@ -1,13 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/Audio.meta
-<<<<<<< HEAD:Assets/Animations.meta
-guid: 21d65850b8c47452cbbeae2b86e1aa57
-=======
-guid: 691477910cf993c439dcac3c62eb922f
->>>>>>> BeatDetection:Assets/Audio.meta
-=======
 guid: 5bb88919370f1db4dbe7388281d0e2e6
->>>>>>> 9b6c6e1967941664bcadefde900d8471b59b9468:Assets/ARSH Studios.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
