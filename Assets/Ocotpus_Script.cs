@@ -25,7 +25,11 @@ public class Ocotpus_Script : MonoBehaviour
         //    limbs[i] = limbsGO[i].GetComponent<Animator>();
         //}
         limbs[0] = limbsGO[0].GetComponent<Animator>();
-                limbs[1] = limbsGO[1].GetComponent<Animator>();
+        limbs[1] = limbsGO[1].GetComponent<Animator>();
+        limbs[2] = limbsGO[2].GetComponent<Animator>();
+        limbs[3] = limbsGO[3].GetComponent<Animator>();
+                limbs[4] = limbsGO[4].GetComponent<Animator>();
+        limbs[5] = limbsGO[5].GetComponent<Animator>();
 
     }
 
@@ -45,6 +49,38 @@ public class Ocotpus_Script : MonoBehaviour
             if(canGrab[1]==true)
             {
                 limbs[1].SetBool("Grab", true);
+            }
+        }
+
+        if(Input.GetKeyDown(Tentacle_03))
+        {
+            if(canGrab[2]==true)
+            {
+                limbs[2].SetBool("Grab", true);
+            }
+        }
+
+        if(Input.GetKeyDown(Tentacle_04))
+        {
+            if(canGrab[3]==true)
+            {
+                limbs[3].SetBool("Grab", true);
+            }
+        }
+
+        if(Input.GetKeyDown(Tentacle_05))
+        {
+            if(canGrab[4]==true)
+            {
+                limbs[4].SetBool("Grab", true);
+            }
+        }
+
+        if(Input.GetKeyDown(Tentacle_06))
+        {
+            if(canGrab[5]==true)
+            {
+                limbs[5].SetBool("Grab", true);
             }
         }
 
