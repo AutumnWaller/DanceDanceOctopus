@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7157391652709961730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -23.2}
-  m_LocalScale: {x: 20, y: 0.5, z: 2}
+  m_LocalScale: {x: 20, y: 1.64, z: 3.72}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -107,13 +107,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  waterLevel: 0
+  waterLevel: 0.27
   floatHeight: 2
   bounceDamp: 0.41
-  BuoyancyCenterOffset: {x: 1, y: 0, z: 0}
+  BuoyancyCenterOffset: {x: 1, y: 1.45, z: 1.03}
   forceFactor: 0
-  actionPoint: {x: 0, y: 0, z: 0}
-  upLift: {x: 0, y: 0, z: 0}
 --- !u!54 &5557897812019088842
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -122,9 +120,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7157391652709961730}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 0.18
+  m_Drag: 0.16
+  m_AngularDrag: 1.13
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
