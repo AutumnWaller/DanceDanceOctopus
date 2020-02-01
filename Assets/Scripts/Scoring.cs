@@ -23,7 +23,7 @@ public class Scoring : MonoBehaviour
     {
         inputs = input.inputs;
         score += (int)(Time.deltaTime * 100);
-        scoreText.text = $"{score}";
+        scoreText.text = $"Score: {score}";
     }
 
     public static void ChangeScore(int amount){
