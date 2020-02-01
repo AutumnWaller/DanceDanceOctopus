@@ -34,9 +34,10 @@ public class shark : MonoBehaviour
         rb.velocity = transform.forward * 10;
         if (hit)
         {
-            rb.velocity += transform.right * 1;
+            rb.velocity += transform.right * -3;
             rb.velocity += transform.up * -10;
-            rb.velocity += transform.forward * -10;
+            rb.velocity += transform.forward * 3;
+            StartCoroutine(coroutine());
 
         }
     }
@@ -54,7 +55,7 @@ public class shark : MonoBehaviour
     }
     private IEnumerator coroutine()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
         Destroy(this.gameObject);
 
 }
