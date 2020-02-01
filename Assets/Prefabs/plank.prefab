@@ -112,8 +112,6 @@ MonoBehaviour:
   bounceDamp: 0.41
   BuoyancyCenterOffset: {x: 1, y: 0, z: 0}
   forceFactor: 0
-  actionPoint: {x: 0, y: 0, z: 0}
-  upLift: {x: 0, y: 0, z: 0}
 --- !u!54 &5557897812019088842
 Rigidbody:
   m_ObjectHideFlags: 0

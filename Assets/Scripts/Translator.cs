@@ -30,6 +30,11 @@ public class Translator : MonoBehaviour
 
     Rigidbody rigidbody;
 
+    private void Start()
+    {
+        rigidbody = GetComponent<Rigidbody>();
+    }
+
     private void Update()
     {
         actionPoint = transform.position + transform.TransformDirection(BuoyancyCenterOffset);
@@ -40,6 +45,14 @@ public class Translator : MonoBehaviour
         {
             upLift = -Physics.gravity * (forceFactor - rigidbody.velocity.y * bounceDamp);
             rigidbody.AddForceAtPosition(upLift, actionPoint);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            gameObject.SetActive(false);
         }
     }
 }
