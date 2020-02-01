@@ -65,6 +65,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limbNo: 0
+  holes:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1987914825
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,6 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limbNo: 4
+  holes: []
 --- !u!1 &65186538919022741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,6 +1080,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limbNo: 3
+  holes:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1764017957002336849
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,6 +1148,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limbNo: 2
+  holes:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1862980388384697081
 GameObject:
   m_ObjectHideFlags: 0
@@ -2357,6 +2367,7 @@ GameObject:
   - component: {fileID: 1559996505682343895}
   - component: {fileID: 3725477142352229538}
   - component: {fileID: 6644492341562698978}
+  - component: {fileID: 8771847019265935291}
   m_Layer: 0
   m_Name: TentacleSixParent
   m_TagString: Untagged
@@ -2392,6 +2403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limbNo: 5
+  holes: []
 --- !u!95 &6644492341562698978
 Animator:
   serializedVersion: 3
@@ -2411,6 +2423,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8771847019265935291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5238034073510834657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 221fd6d07e1f9aa49bc1d2676c8ee15f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  limbNo: 5
+  holes: []
 --- !u!1 &5275769167936193142
 GameObject:
   m_ObjectHideFlags: 0
@@ -2692,6 +2718,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limbNo: 1
+  holes:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &5988300362296700060
 GameObject:
   m_ObjectHideFlags: 0

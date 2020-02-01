@@ -127,6 +127,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shark Variant
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: c675f080a036cb1438bbb2c73afcc27e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Shark
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c675f080a036cb1438bbb2c73afcc27e, type: 3}
 --- !u!1 &6637975042137635901 stripped

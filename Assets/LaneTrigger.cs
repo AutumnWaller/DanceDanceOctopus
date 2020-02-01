@@ -11,7 +11,15 @@ public class LaneTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Has debris: " + other.gameObject.name);
+        if(other.tag =="Plank"){
         OctoScript.DebrisLane(true, other.gameObject, LaneNo);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.tag =="Plank"){
+        OctoScript.DebrisLane(false, null, LaneNo);
+        }
     }
 }
