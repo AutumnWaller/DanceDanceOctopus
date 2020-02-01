@@ -13,7 +13,7 @@ public class BarPlacement : MonoBehaviour
     {
         for(int i = 0; i < SpectrumGenerator.m_SpectrumData.Length; ++i)
         {
-            GameObject bar = Instantiate(m_AudioBar, new Vector3(m_Width * i,0.0f),Quaternion.identity, m_Panel.transform);
+            GameObject bar = Instantiate(m_AudioBar, new Vector3((m_Width * i) + m_Width/2, m_Panel.transform.position.y - 12.5f),Quaternion.identity, m_Panel.transform);
             var rectTransform = bar.transform as RectTransform;
             rectTransform.sizeDelta = new Vector2(m_Width, rectTransform.sizeDelta.y);
             bar.GetComponent<AudioBar>().m_SpectrumPoint = i;
