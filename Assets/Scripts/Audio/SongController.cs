@@ -62,7 +62,6 @@ public class SongController : MonoBehaviour
         m_CurrentCountDownLimit = m_Songs[(int)m_SongSelection].m_BeatInterval;
 
         m_Duration.GetComponent<Text>().text = "Duration: " + m_Songs[(int)m_SongSelection].m_SongLength;
-
         m_SongName.GetComponent<Text>().text = "Song Name: " +  m_Songs[(int)m_SongSelection].m_SongName;
 
         m_Ocean.GetComponent<LowPolyWater.LowPolyWater>().waveFrequency = m_CurrentCountDownLimit;
