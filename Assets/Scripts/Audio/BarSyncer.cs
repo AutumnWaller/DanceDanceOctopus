@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioBar : AudioSyncer
+public class BarSyncer : AudioSyncer
 {
     [SerializeField]private Vector3 m_restScale;
     [SerializeField]private Vector3 m_beatScale;

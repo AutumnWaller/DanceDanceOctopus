@@ -30,7 +30,7 @@ public class SongController : MonoBehaviour
 
     private void Update()
     {
-        m_Ocean.GetComponent<LowPolyWater.LowPolyWater>().waveHeight = Mathf.Clamp(SpectrumGenerator.m_SpectrumData[0],0.0f,8.0f);
+       // m_Ocean.GetComponent<LowPolyWater.LowPolyWater>().waveHeight = Mathf.Clamp(SpectrumGenerator.m_SpectrumData[0],0.0f,8.0f);
        if(m_SongSelection != m_PreviousSong)
        {
             SwitchSongs(m_SongSelection);
