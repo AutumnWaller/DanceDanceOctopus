@@ -30,12 +30,21 @@ public class shark : MonoBehaviour
             }
         }
 
+        if ((this.transform.rotation.x < 0)||(this.transform.rotation.x>60))
+        {
+            this.transform.eulerAngles = new Vector3(10,this.transform.eulerAngles.y, this.transform.eulerAngles.z);
+        }
+
         rb.velocity = transform.forward * 50;
         if (hit)
         {
             rb.velocity = transform.forward * -1;
             this.transform.position += new Vector3(0, -1f, 0);
             this.transform.Rotate(Vector3.right);
+            if (this.transform.rotation.x < 0)
+            {
+                this.transform.Rotate(Vector3.right*20);
+            }
     
             StartCoroutine(coroutine());
 
